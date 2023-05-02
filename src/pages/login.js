@@ -30,7 +30,7 @@ export default function login() {
                             <input type="password" className="form-control" id="inputPassword4" placeholder="Password"/>
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-primary login-btn rounded-pill">Login</button>
+                    <button type="submit" className="btn btn-primary login-btn-login-pg rounded-pill">Login</button>
                 </form>
                 <p className="para-text">
                     Don't have an Account ?

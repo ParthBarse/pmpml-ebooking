@@ -85,18 +85,24 @@ html, body{
 
 .login-pg-title{
   text-align: center;
-  padding-top: 50%;
+  padding-top: 40%;
   font-weight: 700;
   font-size: 2rem;
 }
 
 .login-form{
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
-.login-btn{
+.login-btn-login-pg{
   margin-top: 60px;
   margin-left: 20%;
+  position: relative;
+  text-decoration:none;
+  background-color: #004aad!important;
+  color: white!important;
+  display: block!important;
+  width: 60%;
 }
 
 .inp-fld-1, .inp-fld-2{
