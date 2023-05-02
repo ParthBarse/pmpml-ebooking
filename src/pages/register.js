@@ -23,7 +23,7 @@ export default function login() {
                     <div className="form-row">
                         <div className="form-group col-md-6 inp-fld-reg-1">
                             <label for="inputName">Name</label>
-                            <input type="number" className="form-control" id="inputName" placeholder="Name"/>
+                            <input type="text" className="form-control" id="inputName" placeholder="Name"/>
                         </div>
                         <div className="form-group col-md-6 inp-fld-reg-2">
                             <label for="inputEmail">Email</label>
@@ -51,7 +51,7 @@ export default function login() {
                 <p className="para-text">
                     Already have an Account ?
                     <br />
-                    <a href="/register">
+                    <a href="/login">
                         Login
                     </a>
                 </p>

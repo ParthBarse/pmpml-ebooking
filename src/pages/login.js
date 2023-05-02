@@ -22,12 +22,12 @@ export default function login() {
                 <form className='login-form container'>
                     <div className="form-row">
                         <div className="form-group col-md-6 inp-fld-1">
-                            <label for="inputEmail4">Phone Number</label>
-                            <input type="number" className="form-control" id="inputEmail4" placeholder="Phone Number"/>
+                            <label for="inputNumber">Phone Number</label>
+                            <input type="number" className="form-control" id="inputNumber" placeholder="Phone Number"/>
                         </div>
                         <div className="form-group col-md-6 inp-fld-2">
-                            <label for="inputPassword4">Password</label>
-                            <input type="password" className="form-control" id="inputPassword4" placeholder="Password"/>
+                            <label for="inputPassword">Password</label>
+                            <input type="password" className="form-control" id="inputPassword" placeholder="Password"/>
                         </div>
                     </div>
                     <button type="submit" className="btn btn-primary login-btn-login-pg rounded-pill">Login</button>

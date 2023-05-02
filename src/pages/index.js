@@ -26,7 +26,7 @@ export default function Home() {
         <center className='login-btns'>
         <a href="/login"><button type="button" class="btn login-btn rounded-pill">Login</button></a>
           <br />
-          <button type="button" class="btn reg-btn rounded-pill">Register</button>
+          <a href="/register"><button type="button" class="btn reg-btn rounded-pill">Register</button></a>
         </center>
       </div>
     </>
