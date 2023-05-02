@@ -1,27 +1,101 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html, body{
+  font-family: 'Times New Roman', Times, serif;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.heading{
+  position: relative;
+  text-align: center;
+  margin-top: 15%;
+  font-size: 5em;
+  font-weight: 500;
+  color: #737373;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.sub-heading{
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #2d73de;
+}
+
+.title{
+  position: relative;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.hr-login-pg{
+  position: relative;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.login-btns{
+  position: relative;
+  margin-top: 20%;
+}
+.login-btn{
+  position: relative;
+  text-decoration:none;
+  background-color: #004aad!important;
+  color: white!important;
+  display: block!important;
+  width: 60%;
+}
+
+.reg-btn{
+  position: relative;
+  background-color: #d9d9d9!important;
+  color: #004aad!important;
+  display: block!important;
+  width: 60%;
+}
+
+
+.watermark {
+  /* Used to position the watermark */
+  position: absolute;
+   /* Center the content */
+   align-items: center;
+   display: flex;
+   justify-content: center;
+ 
+   /* Absolute position */
+   left: 0px;
+   position: absolute;
+   top: 4%;
+ 
+   /* Take full size */
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+}
+
+.watermark__body {
+  /* Text color */
+  color: rgba(0, 0, 0, 0.2);
+
+  /* Text styles */
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  /* Rotate the text */
+  transform: rotate(-45deg);
+
+  /* Disable the selection */
+  user-select: none;
+  z-index: 1;
 }
