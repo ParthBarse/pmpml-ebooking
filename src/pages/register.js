@@ -21,27 +21,27 @@ export default function login() {
 
                 <form className='reg-form container'>
                     <div className="form-row">
-                        <div className="form-group col-md-6 inp-fld-1">
+                        <div className="form-group col-md-6 inp-fld-reg-1">
                             <label for="inputName">Name</label>
                             <input type="number" className="form-control" id="inputName" placeholder="Name"/>
                         </div>
-                        <div className="form-group col-md-6 inp-fld-2">
+                        <div className="form-group col-md-6 inp-fld-reg-2">
                             <label for="inputEmail">Email</label>
                             <input type="email" className="form-control" id="inputEmail" placeholder="Email"/>
                         </div>
                     </div>
                     <div className="form-row">
-                        <div className="form-group col-md-6 inp-fld-1">
+                        <div className="form-group col-md-6 inp-fld-reg-1">
                             <label for="inputNumber">Phone Number</label>
                             <input type="number" className="form-control" id="inputNumber" placeholder="Phone Number"/>
                         </div>
-                        <div className="form-group col-md-6 inp-fld-2">
+                        <div className="form-group col-md-6 inp-fld-reg-2">
                             <label for="inputPassword">Password</label>
                             <input type="password" className="form-control" id="inputPassword" placeholder="Password"/>
                         </div>
                     </div>
                     <div className="form-row">
-                        <div className="form-group col-md-6 inp-fld-2">
+                        <div className="form-group col-md-6 inp-fld-reg-2">
                             <label for="inputRePassword">Re-Password</label>
                             <input type="password" className="form-control" id="inputRePassword" placeholder="Re-Password"/>
                         </div>

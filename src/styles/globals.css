@@ -122,7 +122,11 @@ html, body{
 
 .reg-pg-title{
   text-align: center;
-  padding-top: 20%;
+  padding-top: 15%;
   font-weight: 700;
   font-size: 2rem;
+}
+
+.inp-fld-reg-1, .inp-fld-reg-2{
+  margin-top: 2%;
 }
