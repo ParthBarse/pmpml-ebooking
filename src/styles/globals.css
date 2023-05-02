@@ -5,10 +5,13 @@ html, body{
   overflow: hidden;
 }
 
+/* ---------------------------------- Index Page --------------------------------------- */
+
 .heading{
   position: relative;
   text-align: center;
-  margin-top: 15%;
+  /* margin-top: 15%; */
+  padding-top: 15%;
   font-size: 5em;
   font-weight: 500;
   color: #737373;
@@ -72,30 +75,37 @@ html, body{
    display: flex;
    justify-content: center;
  
-   /* Absolute position */
-   left: 0px;
-   position: absolute;
-   top: 4%;
- 
    /* Take full size */
    height: 100%;
    width: 100%;
    z-index: -1;
 }
 
-.watermark__body {
-  /* Text color */
-  color: rgba(0, 0, 0, 0.2);
+/* ---------------------------------- Login Page --------------------------------------- */
 
-  /* Text styles */
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-
-  /* Rotate the text */
-  transform: rotate(-45deg);
-
-  /* Disable the selection */
-  user-select: none;
-  z-index: 1;
+.login-pg-title{
+  text-align: center;
+  padding-top: 50%;
+  font-weight: 700;
+  font-size: 2rem;
 }
+
+.login-form{
+  padding-top: 20%;
+}
+
+.login-btn{
+  margin-top: 60px;
+  margin-left: 20%;
+}
+
+.inp-fld-1, .inp-fld-2{
+  margin-top: 6%;
+}
+
+.para-text{
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* ---------------------------------- Login Page --------------------------------------- */
