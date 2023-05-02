@@ -114,4 +114,15 @@ html, body{
   margin-top: 35px;
 }
 
-/* ---------------------------------- Login Page --------------------------------------- */
+/* ---------------------------------- Register Page --------------------------------------- */
+
+.reg-form{
+  padding-top: 5%;
+}
+
+.reg-pg-title{
+  text-align: center;
+  padding-top: 20%;
+  font-weight: 700;
+  font-size: 2rem;
+}
