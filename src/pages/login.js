@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import mypic from '../images/bus-img.png'
 
 export default function login() {
@@ -35,9 +36,9 @@ export default function login() {
                 <p className="para-text">
                     Don't have an Account ?
                     <br />
-                    <a href="/register">
+                    <Link href="/register">
                     Create here
-                    </a>
+                    </Link>
                 </p>
             </div>
         </>

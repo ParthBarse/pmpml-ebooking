@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import mypic from '../images/bus-img.png'
+import Link from 'next/link';
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,9 +25,9 @@ export default function Home() {
         <hr className='hr-login-pg' />
 
         <center className='login-btns'>
-        <a href="/login"><button type="button" class="btn login-btn rounded-pill">Login</button></a>
+        <Link href="/login"><button type="button" class="btn login-btn rounded-pill">Login</button></Link>
           <br />
-          <a href="/register"><button type="button" class="btn reg-btn rounded-pill">Register</button></a>
+          <Link href="/register"><button type="button" class="btn reg-btn rounded-pill">Register</button></Link>
         </center>
       </div>
     </>
