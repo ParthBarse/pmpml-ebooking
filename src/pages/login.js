@@ -33,6 +33,20 @@ export default function login() {
                 // Check if the login was successful
                 if (data.isSuccess === "True") {
                     // Perform actions for successful login, e.g., redirect to logged-in page
+                    localStorage.setItem('usrnme', data.details.usrnme);
+                    localStorage.setItem('email', data.details.email);
+                    localStorage.setItem('uid', data.details.uid);
+                    localStorage.setItem('pic_url', data.details.pic_url);
+                    localStorage.setItem('phone', data.details.phone);
+                    localStorage.setItem('balance', data.details.balance);
+
+                    console.log(localStorage.getItem('usrnme'))
+                    console.log(localStorage.getItem('email'))
+                    console.log(localStorage.getItem('uid'))
+                    console.log(localStorage.getItem('pic_url'))
+                    console.log(localStorage.getItem('phone'))
+                    console.log(localStorage.getItem('balance'))
+
                     console.log("Login successful");
                     router.push("/dashboard");
                 } else {
