@@ -147,3 +147,7 @@ a:active {
 .inp-fld-reg-1, .inp-fld-reg-2{
   margin-top: 2%;
 }
+
+.toast{
+  z-index: 100;
+}
