@@ -50,13 +50,15 @@ export default function dashboard() {
                         <p className="idValue">{uid}</p>
                     </div>
                     <div className='balanceDiv'>
-                    <div className="balanceInfo">
-                        <p className="balance">Balance : ₹</p>
-                        <p className="balanceValue">{balance}</p>
-                    </div>
-                    <Link href="/addbalance">
-                    <button type="submit" className="btn btn-primary add-bal-btn rounded-pill">Add Balance</button>
-                    </Link>
+                        <div className="balanceInfo">
+                            <p className="balance">Balance : ₹</p>
+                            <p className="balanceValue">{balance}</p>
+                        </div>
+                        <div className="addBal">
+                            <Link href="/addbalance">
+                                <button type="submit" className="btn btn-primary add-bal-btn rounded-pill">Add Balance</button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -167,6 +167,12 @@ a:active {
   margin-top: 20px;
   margin-right: 0%;
   font-family: 'Ubuntu', sans-serif;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: aqua;
 }
 
 .username{
@@ -211,9 +217,13 @@ a:active {
 .add-bal-btn{
   position: relative;
   margin-top: 8px;
+  padding-left: 22px!important;
+  padding-right: 22px!important;
+}
+.addBal{
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 62px;
 }
 
 .bal-pg-title{
