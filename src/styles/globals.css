@@ -162,8 +162,8 @@ a:active {
 
 .profile{
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   margin-right: 0%;
   font-family: 'Ubuntu', sans-serif;
@@ -214,4 +214,10 @@ a:active {
   justify-content: center;
   align-items: center;
   margin-left: 62px;
+}
+
+.bal-pg-title{
+  margin-top: 20%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }

@@ -39,6 +39,7 @@ export default function dashboard() {
                     <span class="navbar-brand mb-0 h1">E-Ticket</span>
                 </div>
             </nav>
+
             <div className="profile">
                 <img src={pic_url} alt="Avatar" height={100} style={{ borderRadius: 50, margin: 20 }} />
 
@@ -53,7 +54,9 @@ export default function dashboard() {
                         <p className="balance">Balance : ₹</p>
                         <p className="balanceValue">{balance}</p>
                     </div>
+                    <Link href="/addbalance">
                     <button type="submit" className="btn btn-primary add-bal-btn rounded-pill">Add Balance</button>
+                    </Link>
                     </div>
                 </div>
             </div>
