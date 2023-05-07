@@ -162,9 +162,10 @@ a:active {
 
 .profile{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   margin-top: 20px;
+  margin-right: 0%;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -213,9 +214,4 @@ a:active {
   justify-content: center;
   align-items: center;
   margin-left: 62px;
-}
-
-.userInfo{
-  align-items: center;
-  justify-content: center;
 }
