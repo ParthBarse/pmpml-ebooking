@@ -63,7 +63,7 @@ export default function addbalance() {
             </nav>
 
             <h1 className='bal-pg-title'>Add Balance</h1>
-                <hr className='hr-login-pg' />
+            <hr className='hr-login-pg' />
 
             <form className='login-form container'>
                 <div className="form-row">
@@ -77,13 +77,13 @@ export default function addbalance() {
             </form>
 
             <center>
-                    <Toast show={showToast} onClose={() => setShowToast(false)} className="toast-error">
-                        <Toast.Header>
-                            <strong className="mr-auto toast">Error</strong>
-                        </Toast.Header>
-                        <Toast.Body>{toastMessage}</Toast.Body>
-                    </Toast>
-                </center>
-            </>
-            )
+                <Toast show={showToast} onClose={() => setShowToast(false)} className="toast-error">
+                    <Toast.Header>
+                        <strong className="mr-auto toast">Error</strong>
+                    </Toast.Header>
+                    <Toast.Body>{toastMessage}</Toast.Body>
+                </Toast>
+            </center>
+        </>
+    )
 }

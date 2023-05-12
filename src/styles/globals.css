@@ -167,12 +167,23 @@ a:active {
   margin-top: 20px;
   margin-right: 0%;
   font-family: 'Ubuntu', sans-serif;
-  border: 2px solid black;
-  border-radius: 12px;
+  /* border: 2px solid black; */
+  border-radius: 14px;
   padding-bottom: 12px;
   margin-left: 12px;
   margin-right: 12px;
-  background-color: aqua;
+  background-color: rgb(215, 215, 215);
+}
+
+.profile-sm{
+  margin-top: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  /* border: 2px solid black; */
+  border-radius: 14px;
+  padding-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: rgb(215, 215, 215);
 }
 
 .username{
@@ -190,7 +201,20 @@ a:active {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 25px;
+  display: flex;
+  border: 2px solid #737373;
+  background-color: #737373;
+  border-radius: 32px;
+  color: white;
+}
+
+.balanceInfo-sm{
+  margin-top: 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
   display: flex;
   border: 2px solid #737373;
   background-color: #737373;
@@ -214,6 +238,16 @@ a:active {
   color: #737373;
 }
 
+.idInfoSm{
+  display: flex;
+  color: #737373;
+}
+
+.userInfoSm {
+  display: flex;
+  justify-content: space-between;
+}
+
 .add-bal-btn{
   position: relative;
   margin-top: 8px;
@@ -230,4 +264,92 @@ a:active {
   margin-top: 20%;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.latest-ticket{
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 0%;
+  font-family: 'Ubuntu', sans-serif;
+  /* border: 2px solid black; */
+  border-radius: 14px;
+  padding-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: rgb(215, 215, 215);
+}
+
+.ticket-details{
+  margin-left: 25px;
+  margin-top: 0.5px;
+}
+
+.ticket-details-date{
+  padding-top: 18px;
+  display: flex;
+}
+
+.latest-ticket-heading{
+  margin-top: 22px;
+  text-align: center;
+}
+
+.book-ticket-btn{
+  position: relative;
+  text-decoration:none;
+  color: white!important;
+  display: block!important;
+  width: 250px;
+  font-size: 26px!important;
+}
+
+.your-ticket-btn{
+  position: relative;
+  text-decoration:none;
+  background-color: #004aad!important;
+  color: white!important;
+  display: block!important;
+  width: 250px;
+  font-size: 26px!important;
+}
+
+.end-buttons-1 {
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+}
+
+.end-buttons-2 {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .bus-stop-selection{
+  align-items: center;
+  justify-content: center;
+}
+
+.bus-stop-selection_from{
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bus-stop-selection_to{
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bus-stop-selection_1{
+  margin-bottom: 12px;
+} */
+
+.bus-options{
+  font-size: 18px;
 }
