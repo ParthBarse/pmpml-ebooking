@@ -127,6 +127,21 @@ export default function BusStopList() {
         setPic_Url(pic_url);
     }, [])
 
+    function BookTicket() {
+        const [response, setResponse] = useState(null);
+        const url = `https://bnbdevelopers-test-apis.vercel.app/bookticket?uid=${uid}&price=${searchText_price}`;
+      
+        async function handleBookTicket() {
+          try {
+            const res = await fetch(url);
+            const data = await res.json();
+            setResponse(data);
+          } catch (error) {
+            console.error(error);
+          }
+        }
+    }
+
     const filteredBusStops_1 = busstops.filter((busstop_1) =>
         busstop_1.toLowerCase().includes(searchText_1.toLowerCase())
     );
@@ -218,7 +233,7 @@ export default function BusStopList() {
                         />
                     </div>
 
-                    <button type="submit" className="btn btn-primary login-btn-login-pg rounded-pill">Book</button>
+                    <button type="submit" className="btn btn-primary login-btn-login-pg rounded-pill" onClick={BookTicket}>Book</button>
                 </div>
             </div>
         </>
