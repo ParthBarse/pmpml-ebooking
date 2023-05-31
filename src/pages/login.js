@@ -39,6 +39,7 @@ export default function login() {
                     localStorage.setItem('pic_url', data.details.pic_url);
                     localStorage.setItem('phone', data.details.phone);
                     localStorage.setItem('balance', data.details.balance);
+                    localStorage.setItem('password', data.details.password);
 
                     console.log(localStorage.getItem('usrnme'))
                     console.log(localStorage.getItem('email'))

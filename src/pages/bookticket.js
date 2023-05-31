@@ -101,7 +101,7 @@ import { useRouter } from "next/router";
 import { Toast } from 'react-bootstrap';
 
 export default function BusStopList() {
-    const busstops = ['shaniwarwada', 'MANAPA', 'Swarget', "Deccan", "Pune Station", "Katraj", "Shivaji Nagar Railway Station", "COEP Hostel", "Shivaji Maharaj Putala", "Dengale Pul", "Kumbhar Wada", "Gadital Juna Bazar", "Sasoon Hospital"];
+    const busstops = ['Vishrantwadi', 'Yerawada', 'Pune Station', 'Katraj', 'Kothrud', 'Alandi', 'Pimpri', 'Akurdi', 'Dhankawadi', 'Bibvewadi', 'Wakdewadi', 'Shivaji Nagar', 'Moshi', 'Magarpatta', 'Viman Nagar', 'Kharadi', 'Kalyani Nagar', 'Hadapsar', 'Ramwadi', 'Wagholi', 'Dhanori', 'Kalas', 'Swargate', 'Balaji Nagar', 'Shaniwar Wada', 'Lohgaon', 'Dighi', 'Krushna Nagar', 'Bhekrai Nagar', 'Shewalwadi', 'Bhosari', 'COEP', 'Tilak road', 'JM road', 'FC road', 'Lawale', 'Satara road', 'Khadki', 'Ammunition Factory', 'Deccan'];
     const [searchText_1, setSearchText_1] = useState('');
     const [selectedStop_1, setSelectedStop_1] = useState('');
 
@@ -115,6 +115,9 @@ export default function BusStopList() {
     const [uid, setUid] = useState(null);
     const [balance, setBalance] = useState(null);
     const [pic_url, setPic_Url] = useState(null);
+    const [response, setResponse] = useState(null);
+    const [showToast, setShowToast] = useState(false);
+    const [toastMessage, setToastMessage] = useState('');
     useEffect(() => {
         // Perform localStorage action
         const username = localStorage.getItem('usrnme')
@@ -127,18 +130,19 @@ export default function BusStopList() {
         setPic_Url(pic_url);
     }, [])
 
-    function BookTicket() {
-        const [response, setResponse] = useState(null);
+    async function BookTicket() {
         const url = `https://bnbdevelopers-test-apis.vercel.app/bookticket?uid=${uid}&price=${searchText_price}`;
-      
-        async function handleBookTicket() {
-          try {
+        try {
+            console.log("Into bookticket")
             const res = await fetch(url);
             const data = await res.json();
+            let new_bal = parseInt(balance, 10) - parseInt(searchText_price)
+            localStorage.setItem("balance", new_bal)
             setResponse(data);
-          } catch (error) {
+            setToastMessage('Ticket Booked Successfully');
+            setShowToast(true);
+        } catch (error) {
             console.error(error);
-          }
         }
     }
 
@@ -236,6 +240,17 @@ export default function BusStopList() {
                     <button type="submit" className="btn btn-primary login-btn-login-pg rounded-pill" onClick={BookTicket}>Book</button>
                 </div>
             </div>
+
+            <br />
+            <br />
+            <center>
+                <Toast show={showToast} onClose={() => setShowToast(false)} className="toast-error">
+                    <Toast.Header>
+                        <strong className="mr-auto toast">Error</strong>
+                    </Toast.Header>
+                    <Toast.Body>{toastMessage}</Toast.Body>
+                </Toast>
+            </center>
         </>
     );
 }

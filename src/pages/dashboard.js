@@ -67,14 +67,14 @@ export default function dashboard() {
 
             <div className="latest-ticket">
                 <div className="ticket-details-date">
-                    <p className='ticket-details'>Date:{Date}</p>
-                    <p className='ticket-details'>Time:</p>
+                    <p className='ticket-details'><b>Date:</b>{Date} 31-5-2023</p>
+                    <p className='ticket-details'><b>Time:</b> 9:15</p>
                 </div>
                 <div>
-                    <p className='ticket-details'>From:</p>
-                    <p className='ticket-details'>To:</p>
+                    <p className='ticket-details'><b>From:</b> Vishrant Wadi</p>
+                    <p className='ticket-details'><b>To:</b> Pune Station</p>
                 </div>
-                <p className='ticket-details'>Fare:</p>
+                <p className='ticket-details'><b>Fare:</b> 15</p>
 
             </div>
 

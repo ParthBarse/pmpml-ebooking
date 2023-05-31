@@ -45,38 +45,38 @@ export default function dashboard() {
 
             <div className="latest-ticket">
                 <div className="ticket-details-date">
-                    <p className='ticket-details'>Date:{Date}</p>
-                    <p className='ticket-details'>Time:</p>
+                    <p className='ticket-details'><b>Date:</b>{Date} 21-4-2023</p>
+                    <p className='ticket-details'><b>Time:</b> 10:30</p>
                 </div>
                 <div>
-                    <p className='ticket-details'>From:</p>
-                    <p className='ticket-details'>To:</p>
+                    <p className='ticket-details'><b>From:</b> Hadapsar</p>
+                    <p className='ticket-details'><b>To:</b> Swargate</p>
                 </div>
-                <p className='ticket-details'>Fare:</p>
+                <p className='ticket-details'>Fare: 20</p>
 
             </div>
             <div className="latest-ticket">
                 <div className="ticket-details-date">
-                    <p className='ticket-details'>Date:{Date}</p>
-                    <p className='ticket-details'>Time:</p>
+                    <p className='ticket-details'><b>Date:</b>{Date} 27-4-2023</p>
+                    <p className='ticket-details'><b>Time:</b> 4:30</p>
                 </div>
                 <div>
-                    <p className='ticket-details'>From:</p>
-                    <p className='ticket-details'>To:</p>
+                    <p className='ticket-details'><b>From:</b> Shivaji Nagar</p>
+                    <p className='ticket-details'><b>To:</b> Katraj</p>
                 </div>
-                <p className='ticket-details'>Fare:</p>
+                <p className='ticket-details'>Fare: 20</p>
 
             </div>
             <div className="latest-ticket">
                 <div className="ticket-details-date">
-                    <p className='ticket-details'>Date:{Date}</p>
-                    <p className='ticket-details'>Time:</p>
+                    <p className='ticket-details'><b>Date:</b>{Date} 30-5-2023</p>
+                    <p className='ticket-details'><b>Time:</b> 7:45</p>
                 </div>
                 <div>
-                    <p className='ticket-details'>From:</p>
-                    <p className='ticket-details'>To:</p>
+                    <p className='ticket-details'><b>From:</b> Wagholi</p>
+                    <p className='ticket-details'><b>To:</b> Viman Nagar</p>
                 </div>
-                <p className='ticket-details'>Fare:</p>
+                <p className='ticket-details'>Fare: 15</p>
 
             </div>
 
