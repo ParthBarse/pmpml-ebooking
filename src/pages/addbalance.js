@@ -103,16 +103,16 @@ export default function addbalance() {
                 }
             } else {
                 // Handle error responses
-                console.log("Try Again");
-                setToastMessage('Try Again');
-                setShowToast(true);
+                // console.log("Try Again");
+                // setToastMessage('Try Again');
+                // setShowToast(true);
             }
         } catch (error) {
             // Handle any errors that occurred during the login request
             // setError(error.message);
-            console.log(error.message);
-            setToastMessage(error.message);
-            setShowToast(true);
+            // console.log(error.message);
+            // setToastMessage(error.message);
+            // setShowToast(true);
         }
     };
     return (
